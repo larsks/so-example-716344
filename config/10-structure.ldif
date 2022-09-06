@@ -1,0 +1,16 @@
+dn: dc=yln,dc=info
+objectClass: organization
+objectClass: dcObject
+o: yln.info
+dc: yln
+
+dn: ou=users,dc=yln,dc=info
+objectClass: organizationalUnit
+ou: users
+
+dn: cn=alice,ou=users,dc=yln,dc=info
+objectClass: organizationalPerson
+objectClass: simpleSecurityObject
+cn: alice
+sn: user
+userPassword: secret
