@@ -2,14 +2,14 @@ To deploy the test environment using Podman:
 
 ```
 podman run --replace --pull=always -d -p 127.0.0.1:3890:389 --name slapd \
-  -v $PWD/config:/docker-entrypoint.d ghcr.io/larsks/docker-slapd-example:feature-centos
+  -v $PWD/config:/docker-entrypoint.d ghcr.io/larsks/docker-slapd-example:centos
 ```
 
 Or Docker:
 
 ```
 docker run --pull=always -d -p 127.0.0.1:3890:389 --name slapd \
-  -v $PWD/config:/docker-entrypoint.d ghcr.io/larsks/docker-slapd-example:feature-centos
+  -v $PWD/config:/docker-entrypoint.d ghcr.io/larsks/docker-slapd-example:centos
 ```
 
 This will give you a slapd server running on `localhost:3890`. You should be able to perform an `ldapsearch` like this:
