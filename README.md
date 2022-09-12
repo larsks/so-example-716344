@@ -1,3 +1,5 @@
+This repository accompanies [this answer](https://unix.stackexchange.com/a/716379/4989) on unix.stackexchange.com.
+
 To deploy the test environment using Podman:
 
 ```
